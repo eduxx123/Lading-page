@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;1,500&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap');
+
+body {
+    background-color: var(--fundo-principal);
+    color: var(--cor-principal);
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    font-family: inter;
+    background-color: var(--fundo-header);
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+.cabecalho-links {
+    display: flex;
+    gap: 16px;
+}
+
+.imagem-logo {
+    max-width: 30px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.nome-logo {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: var(--cor-principal);
+}
+
+.links {
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: var(--botoes);
+}
+
+.links:hover {
+    color: var(--cor-principal);
+    background-color:var(--hover-links);
+    transition: 0.3s;
+}
+
+.conteudo-principal {
+    display: flex;
+    margin-top: 50px;
+    padding: 16px;
+    gap: 15px;
+    margin-top: 94px;
+    max-width: 100vw;
+}
+
+.menu {
+    max-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titulo {
+    font-size: 32px;
+    flex-wrap: wrap;
+    font-family: Montserrat;
+}
+
+.descricao-titulo {
+    font-family: roboto;
+}
+
+.descricao-titulo-botao {
+    font-family: montserrat;
+    margin-top: 15px;
+}
+
+hr {
+    width: 28vw;
+}
+
+.pontos-turisticos {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.imagem-card {
+    max-width: 300px;
+}
+
+.card {
+    align-items: center;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.titulo-card {
+    font-size: 25px;
+    font-family: teko;
+    text-transform: capitalize;
+    
+}
+
+.titulo-card:hover {
+    /* text-decoration: underline; */
+    color: var(--hover-links);
+    transition: 0.3s;
+}
+
+.descricao-card {
+    overflow-y: scroll;
+    border: 1px solid var(--cor-principal);
+    height: 150px;
+    color: var(--cor-principal);
+    font-family: inter;
+}
+
+.rodape {
+    background-color: var(--fundo-footer);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    font-family: inter;
+    gap: 10px;
+    width: 100vw;
+    bottom: 0;
+}
+
+.titulo-rodape {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icones-rodape {
+    display: flex;
+    gap: 15px;
+}
+
+.icones-rodape a i:hover {
+    color: var(--botoes);
+}
